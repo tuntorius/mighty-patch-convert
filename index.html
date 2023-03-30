@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mighty Patch Conversion Tool</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mighty Patch Conversion Tool</h1>
+	  <p class="spaced">Drop a QR code or a mspatch/mppropatch to convert to the other type.</p>
+	  <label for="file-input" class="file-input-label">Choose file</label>
+		<input id="file-input" type="file" style="display: none;">
+		<p class="spaced">or</p>
+		<div class="file-drop-zone">
+		  <div class="file-drop-zone-text">Drop file here</div>
+		</div>
+	  <div id="qr_output">
+		  <h2>Result:</h2>
+		  <div class="result">
+			<p id="devtype" class="spaced">Converted file will appear here</p>
+			<div id="qr"></div>
+			<p class="qr_name"></p>
+		  </div>
+		  <div class="download-container">
+			<a href="#" class="download">Download</a>
+		  </div>
+	  </div>
+	  <div id="patch_output">
+		  <div class="download-container">
+			<a href="#" class="download" onclick="saveMspace()">Download *.mspatch</a>
+		  </div>
+		  <div class="download-container">
+			<a href="#" class="download" onclick="saveMppro()">Download *.mppropatch</a>
+		  </div>
+	  </div>
+    </div>
+	<footer>
+	<!--div-->
+	<p>Check out my other projects:</p>
+	<b>Mightier Amp</b> on <a href="https://github.com/tuntorius/mightier_amp" target="_blank">Github</a> or <a href="https://play.google.com/store/apps/details?id=com.tuntori.mightieramp" target="_blank">Google Play</a>
+	<p><a href="https://github.com/tuntorius/mightier_amp">NUX IR Patching tool</a></p>
+	<!--/div-->
+	<!--span></span-->
+	<!--div class="support">
+		<p>This tool is free to use, but if you find it useful, you can support me at this link:</p>
+		<a href="https://www.paypal.com/donate?hosted_button_id=FZWWAM4NUFRPC" rel="nofollow"><img src="https://camo.githubusercontent.com/361950b331ef676b7eec436a4dbe5a7ce47211a6623dcc889b1f5b7b611b27df/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f55532f692f62746e2f62746e5f646f6e61746543435f4c472e676966"
+		alt="paypal" data-canonical-src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" style="max-width: 100%;">
+		</a>
+	</div-->
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qr-scanner/1.4.2/qr-scanner.umd.min.js" integrity="sha512-a/IwksuXdv0Q60tVkQpwMk5qY+6cJ0FJgi33lrrIddoFItTRiRfSdU1qogP3uYjgHfrGY7+AC+4LU4J+b9HcgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="converter.js"></script>
+  </body>
+</html>

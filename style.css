@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  overflow-y: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.result {
+  /*margin-top: 10px;*/
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 20px;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.download-container {
+	padding: 0 10px;
+}
+
+p.spaced, p.qr_name {
+	margin:10px 0;
+}
+.download {
+  display: block;
+  margin: 10px auto;
+  max-width:300px;
+  text-decoration: none;
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.file-input-label {
+  border-radius: 5px;
+  background-color: #008CBA;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.file-drop-zone {
+  background-color:white;
+  padding: 20px;
+  border: 2px dashed #aaa;
+  text-align: center;
+}
+
+.file-drop-zone.valid-drop {
+  background-color:#bfb;
+  border-color: #0f0;
+}
+
+.file-drop-zone-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  pointer-events:none;
+}
+
+#qr_output, #patch_output {
+	display:none;
+}
+
+footer {
+	
+  display: inline-block;
+  flex-shrink: 0;
+  width: 100%;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  padding: 10px 50px;
+  text-align:center;
+  background-color: #f0f0f0;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+span {
+	flex:1;
+}
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support > p {
+	width:250px;
+}
+.support > a {
+	width:110px;
+	
+}
